@@ -1,0 +1,34 @@
+# ── Core ML ───────────────────────────────────────────────────────────────────
+torch>=2.2.0
+transformers>=4.43.0
+accelerate>=0.30.0
+sentencepiece
+
+# ── Embeddings + Reranker ──────────────────────────────────────────────────────
+# sentence-transformers provides BOTH the bi-encoder (MiniLM embeddings)
+# AND the CrossEncoder (reranker) — one package does both jobs.
+sentence-transformers>=3.0.0
+
+# ── FAISS  (pick ONE) ─────────────────────────────────────────────────────────
+faiss-cpu          # CPU-only  ← default, works everywhere
+# faiss-gpu        # GPU (CUDA) — uncomment if you have CUDA
+
+# ── LangChain stack ───────────────────────────────────────────────────────────
+langchain>=0.2.0
+langchain-community>=0.2.0
+langchain-huggingface>=0.0.3
+langchain-text-splitters>=0.2.0
+
+# ── PDF + Image ───────────────────────────────────────────────────────────────
+pymupdf            # fitz — PDF parsing and image extraction
+Pillow>=10.0.0     # PIL — image loading
+
+# ── FastAPI backend ───────────────────────────────────────────────────────────
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+
+# ── Ollama Python client ──────────────────────────────────────────────────────
+ollama>=0.2.0
+
+# ── Misc ──────────────────────────────────────────────────────────────────────
+numpy>=1.26.0

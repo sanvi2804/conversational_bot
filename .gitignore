@@ -1,0 +1,46 @@
+# Virtual environments
+myenv/
+venv/
+env/
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Models (too large)
+models/
+*.safetensors
+*.onnx
+*.xml
+
+# Extracted files
+extracted_images/
+data/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test results
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment files
+.env.local
+.env.*.local
