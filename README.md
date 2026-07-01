@@ -2,6 +2,21 @@
 
 A conversational AI bot with a React frontend and Python backend that processes questions and provides intelligent responses using NLP models.
 
+## About
+
+This project is a full-stack conversational AI application designed to provide intelligent question-answering capabilities. It combines modern web technologies with advanced natural language processing to create an intuitive user experience.
+
+The bot leverages state-of-the-art transformer models for semantic understanding and can process various types of input including text and images. The architecture is modular and scalable, with optimized model variants (ONNX, OpenVINO) available for production deployment.
+
+**Key Capabilities:**
+- Semantic similarity matching using embeddings
+- Multi-modal understanding (text + images)
+- Real-time API responses
+- User-friendly web interface
+- Extensible architecture for adding new models and features
+
+This project combines best practices from both machine learning and web development, making it suitable for educational purposes, research, or as a foundation for production conversational AI systems.
+
 ## Project Structure
 
 - **api.py** - FastAPI backend server
